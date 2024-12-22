@@ -1,7 +1,3 @@
-/*
-Analyze Channel Portfolio
-*/
-
 -- 1. Weekly Trended Sessions for New Paid Search Channel (bsearch) vs GSearch (nonbrand)
 SELECT
     DATE_SUB(DATE(created_at), INTERVAL WEEKDAY(DATE(created_at)) DAY) AS start_of_week,
@@ -18,8 +14,6 @@ WHERE created_at > '2012-08-22'
     AND created_at < '2012-11-29'
 GROUP BY start_of_week;
 
--- Observation:
--- GSearch is approximately 3 times the traffic of BSearch.
 
 -- 2. Compare Channel Characteristics (Mobile Sessions for BSearch vs GSearch)
 SELECT
@@ -40,9 +34,6 @@ WHERE created_at > '2012-08-22'
     AND utm_source IN ('gsearch', 'bsearch')
 GROUP BY utm_source;
 
--- Observation:
--- Mobile session percentage for BSearch: 8.62%
--- Mobile session percentage for GSearch: 24.52%
 
 -- 3. Cross-Channel Bid Optimization (Nonbrand Session to Order Conversion Rate for GSearch and BSearch, Sliced by Device)
 SELECT
@@ -58,9 +49,6 @@ WHERE ws.utm_campaign = 'nonbrand'
     AND ws.created_at < '2012-09-19'
 GROUP BY ws.device_type, ws.utm_source;
 
--- Observation:
--- GSearch performs much better than BSearch on both devices.
--- The marketing department decides to bid down on BSearch.
 
 -- 4. Analyze Channel Portfolio Trends to See Changes After Changing Bidding
 SELECT 
