@@ -11,7 +11,6 @@ LEFT JOIN orders od ON ws.website_session_id = od.website_session_id
 GROUP BY ws.utm_content
 ORDER BY sessions DESC;
 
-
 -- 1.2 Session-to-order conversion rate for a specific campaign (gsearch, nonbrand)
 SELECT 
     COUNT(DISTINCT ws.website_session_id) AS sessions, 
@@ -163,9 +162,7 @@ LEFT JOIN utm_bounce_sessions bs ON futm.website_session_id = bs.website_session
 GROUP BY futm.pageview_url;
 
 -- 2.4 Weekly trend analysis of landing pages
-
 -- overall paid search bounce trended weekly
-
 CREATE TEMPORARY TABLE first_viewpage
 SELECT 
 		wp.website_session_id,
