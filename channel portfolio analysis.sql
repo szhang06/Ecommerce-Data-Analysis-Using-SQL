@@ -88,7 +88,3 @@ WHERE created_at > '2012-11-04'
     AND created_at < '2012-12-22'
     AND utm_campaign = 'nonbrand'
 GROUP BY start_of_week;
-
--- Observation:
--- After bidding down BSearch, there was a drop in traffic.
--- GSearch also experienced a drop due to Black Friday and Cyber Monday.
