@@ -61,6 +61,7 @@ WHERE created_at BETWEEN '2012-04-15' AND '2012-06-09'
 GROUP BY YEAR(created_at), WEEK(created_at);
 
 -- 2. Website Performance Analysis
+
 -- 2.1 Most viewed website pages
 SELECT 
     pageview_url,
