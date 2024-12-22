@@ -1,7 +1,3 @@
-/*
-Product Analysis
-*/
-
 -- 1. Get the list of current primary products
 SELECT DISTINCT product_id 
 FROM order_items
