@@ -1,5 +1,3 @@
-USE mavenfuzzyfactory;
-
 -- 1. Traffic Source Analysis
 
 -- 1.1 Use UTM parameters to identify paid website sessions and revenue impact
