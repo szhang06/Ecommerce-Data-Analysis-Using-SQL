@@ -38,7 +38,7 @@ We next analyzed whether the increase in performance was due to the growth of th
 
 To further assess the impact of the second product, we examined the conversion funnels for both products. Product 2 showed a higher conversion rate from the product page to the cart, while other metrics remained similar. Based on these results, we can conclude that the second product has positively contributed to the business.
 
-### Cross-Sell Analysis
+#### Cross-Sell Analysis
 
 **Business Task**: Evaluate the effectiveness of a new cross-sell feature in increasing average order value (AOV) and conversion metrics.
 
